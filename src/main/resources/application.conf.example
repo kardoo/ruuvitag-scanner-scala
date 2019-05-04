@@ -1,0 +1,16 @@
+ruuvitag-scanner {
+  printValues = true
+  macTag {
+    D9EB4ED03C54 = "IndoorHall"
+    C8F2938A2B32 = "IndoorRoom"
+    F15F730CA35 = "Outdoor"
+  }
+}
+
+influxdb {
+  enable = true
+  host = "localhost"
+  port = 8086
+  user = "admin"
+  pass = "admin"
+}
