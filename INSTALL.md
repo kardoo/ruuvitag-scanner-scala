@@ -87,6 +87,10 @@ pi@raspberrypi:~ $ rm master.zip
 
  pi@raspberrypi:~ $ cd ruuvitag_scanner_scala
 
+ #edit your influxDB configurations and MAC name
+
+ pi@raspberrypi:~ $ vi application.conf
+
  pi@raspberrypi:~/ruuvitag_scanner_scala $ cat ruuviscanner.service
 
 ~~~~
