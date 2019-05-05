@@ -102,7 +102,7 @@ User=root
 
 WorkingDirectory=/home/pi/ruuvitag_scanner_scala
 
-ExecStart=/bin/scala  -Djava.library.path=/usr/lib/arm-linux-gnueabihf/ -Dconfig.file=/home/pi/ruuvitag_scanner_scala/application_remote.conf -cp /usr/lib/lib/java/tinyb.jar:ruuvitag-scanner-scala-1.0.jar:lib/* ruuvitag.scanner.RuuviScannerApp &gt; /var/log/ruuvi_scanner_remote.log 2&gt;&1
+ExecStart=/bin/scala  -Djava.library.path=/usr/lib/arm-linux-gnueabihf/ -Dconfig.file=/home/pi/ruuvitag_scanner_scala/application_remote.conf -cp /usr/lib/lib/java/tinyb.jar:ruuvitag-scanner-scala-1.0.jar:lib/* ruuvitag.scanner.RuuviScannerApp > /var/log/ruuvi_scanner_remote.log 2>&1
 
 Restart=always
 
