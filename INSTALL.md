@@ -84,15 +84,9 @@ pi@raspberrypi:~ $ rm master.zip
  pi@raspberrypi:~ $ mkdir ruuvitag_scanner_scala
 
  pi@raspberrypi:~ $ cd ruuvitag_scanner_scala
-
- 
-
- 
-
  pi@raspberrypi:~/ruuvitag_scanner_scala $ cat ruuviscanner.service
-
+>>>
 [Unit]
-
 Description=Ruuvi Scanner Remote Service
 
 After=network.target
@@ -113,6 +107,7 @@ Restart=always
 
 WantedBy=multi-user.target
 
+<<<
  sudo cp ruuviscanner.service  /etc/systemd/system/
 
  sudo systemctl start ruuviscanner
