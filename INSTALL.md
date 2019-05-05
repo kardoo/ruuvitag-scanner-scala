@@ -1,18 +1,19 @@
+# Update your raspberry
 pi@raspberrypi:~ $ sudo apt-get update
 
 pi@raspberrypi:~ $ sudo apt-get upgrade
 
- #java & bluez & doxxygen
+# Install java & bluez & doxxygen
 
 pi@raspberrypi:~ $ sudo apt-get install oracle-java8-jdk libglib2.0-dev cmake bluez doxygen
 
-# add the this: export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/
+ #Add the this: export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/
 
 pi@raspberrypi:~ $ echo "export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/" &gt;&gt; ~/.bashrc
 
 pi@raspberrypi:~ $ source ~/.bashrc
 
- #scala
+ # Install scala
 
 pi@raspberrypi:~ $ wget https://downloads.typesafe.com/scala/2.12.8/scala-2.12.8.tgz
 
@@ -26,7 +27,7 @@ pi@raspberrypi:~ $ sudo ln -s /usr/lib/scala/scala-2.12.8/bin/scalac /bin/scalac
 
 pi@raspberrypi:~ $ rm scala-2.12.8.tgz
 
- #Update bluez to 5.50 (Optional)
+ # Update bluez to 5.50 (Optional)
 
  #https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/
 
@@ -52,7 +53,7 @@ pi@raspberrypi:/usr/local/bluez-5.50 $ sudo make install
 
 pi@raspberrypi:/usr/local/bluez-5.50 $ sudo reboot
 
- #Install tinyb - bluetooth library 
+ # Install tinyb - bluetooth library 
 
  #https://github.com/intel-iot-devkit/tinyb
 
@@ -78,7 +79,7 @@ pi@raspberrypi:/usr/local/tinyb/build $ sudo make install
 
 pi@raspberrypi:~ $ rm master.zip
 
- # start ruuvitag_scanner_scala
+ # Start ruuvitag_scanner_scala
 
  pi@raspberrypi:~ $ mkdir ruuvitag_scanner_scala
 
