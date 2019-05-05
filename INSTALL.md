@@ -123,3 +123,7 @@ WantedBy=multi-user.target
  sudo systemctl enable ruuviscanner
 
  ps -ef | grep ruuvi
+
+# Install Grafana and InfluxDB
+
+Please check this link: https://blog.ruuvi.com/rpi-gateway-6e4a5b676510
