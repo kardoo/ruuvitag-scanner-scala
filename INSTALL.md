@@ -81,12 +81,14 @@ pi@raspberrypi:~ $ rm master.zip
 
 # Install ruuvitag_scanner_scala
 
- pi@raspberrypi:~ $ mkdir ruuvitag_scanner_scala
+ pi@raspberrypi:~ $ wget https://github.com/kardoo/ruuvitag-scanner-scala/releases/download/1.0/ruuvitag_scanner_scala.zip
 
- pi@raspberrypi:~ $ cd ruuvitag_scanner_scala
+ pi@raspberrypi:~ $ unzip ruuvitag_scanner_scala.zip
+
+ pi@raspberrypi:~ $ cd ruuvitag_scanner_scala
+
  pi@raspberrypi:~/ruuvitag_scanner_scala $ cat ruuviscanner.service
- 
-	
+
 ~~~~
 
 [Unit]
@@ -109,7 +111,6 @@ Restart=always
 [Install]
 
 WantedBy=multi-user.target
-
 	
 ~~~~
 
