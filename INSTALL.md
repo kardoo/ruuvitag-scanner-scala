@@ -13,7 +13,7 @@ pi@raspberrypi:~ $ echo "export JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hf
 
 pi@raspberrypi:~ $ source ~/.bashrc
 
- # Install scala
+# Install Scala
 
 pi@raspberrypi:~ $ wget https://downloads.typesafe.com/scala/2.12.8/scala-2.12.8.tgz
 
@@ -27,9 +27,9 @@ pi@raspberrypi:~ $ sudo ln -s /usr/lib/scala/scala-2.12.8/bin/scalac /bin/scalac
 
 pi@raspberrypi:~ $ rm scala-2.12.8.tgz
 
- # Update bluez to 5.50 (Optional)
+# Update bluez to 5.50 (Optional)
 
- #https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/
+#https://scribles.net/updating-bluez-on-raspberry-pi-5-43-to-5-48/
 
 pi@raspberrypi:~ $ sudo apt-get update
 
@@ -53,7 +53,7 @@ pi@raspberrypi:/usr/local/bluez-5.50 $ sudo make install
 
 pi@raspberrypi:/usr/local/bluez-5.50 $ sudo reboot
 
- # Install tinyb - bluetooth library 
+# Install tinyb - bluetooth library 
 
  #https://github.com/intel-iot-devkit/tinyb
 
@@ -79,7 +79,7 @@ pi@raspberrypi:/usr/local/tinyb/build $ sudo make install
 
 pi@raspberrypi:~ $ rm master.zip
 
- # Start ruuvitag_scanner_scala
+# Install ruuvitag_scanner_scala
 
  pi@raspberrypi:~ $ mkdir ruuvitag_scanner_scala
 
